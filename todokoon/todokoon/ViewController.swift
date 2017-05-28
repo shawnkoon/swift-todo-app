@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         task1.important = false
         
         let task2 = Task()
-        task2.name = "Cut the cheese"
+        task2.name = "Cut the cheese and I like to cut the cheese isn't that nice?"
         task2.important = true
         
         let task3 = Task()
@@ -53,6 +53,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         task3.important = true
         
         return [task1, task2, task3]
+    }
+    
+    @IBAction func plusTapped(_ sender: Any) {
+        performSegue(withIdentifier: "newTodoSegue", sender: nil)
     }
 }
 
