@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eAO-RI-xW9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eAO-RI-xW9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--To do To do-->
+        <!--To do koon-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="todokoon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="TasksViewController" customModule="todokoon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -35,7 +35,7 @@
                             <constraint firstItem="oMQ-dU-4Qs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wK4-ev-9yP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="To do To do" id="Rxd-TK-eFO">
+                    <navigationItem key="navigationItem" title="To do koon" id="Rxd-TK-eFO">
                         <barButtonItem key="backBarButtonItem" title="Back" id="u9g-6c-9dV"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="z5R-0B-qvA">
                             <connections>
@@ -89,7 +89,7 @@
                                 <rect key="frame" x="167" y="272" width="41" height="30"/>
                                 <state key="normal" title="Add It"/>
                                 <connections>
-                                    <action selector="addTapped:" destination="Tom-mZ-HXp" eventType="touchUpInside" id="Tjw-6n-dd8"/>
+                                    <action selector="addTapped:" destination="Tom-mZ-HXp" eventType="touchUpInside" id="Xez-et-DDh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,7 +110,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addTapped" destination="qCp-6q-w2t" id="t0S-el-UeG"/>
                         <outlet property="isImportant" destination="UTM-3K-MSA" id="vVT-yJ-aXs"/>
                         <outlet property="taskName" destination="heR-GZ-jc1" id="47i-it-9at"/>
                     </connections>

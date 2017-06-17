@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TasksViewController.swift
 //  todokoon
 //
 //  Created by Shawn Son on 5/27/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -50,13 +50,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let task3 = Task()
         task3.name = "Wash my car"
-        task3.important = true
+        task3.important = false
         
         return [task1, task2, task3]
     }
     
     @IBAction func plusTapped(_ sender: Any) {
         performSegue(withIdentifier: "newTodoSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextViewController = segue.destination as! CreateTaskViewController
+        nextViewController.previousViewController = self
     }
 }
 
