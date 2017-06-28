@@ -13,11 +13,17 @@ class CompleteViewController: UIViewController {
     var task = Task()
 
     @IBOutlet weak var nameLabel: UILabel!
+    
+    var previousViewController = TasksViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         nameLabel.text = task.name
+        
+        if task.important {
+            nameLabel.text = "‼️\(task.name)"
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +32,8 @@ class CompleteViewController: UIViewController {
     }
 
     @IBAction func completeTapped(_ sender: Any) {
-        
+        previousViewController.tasks.remove(at: previousViewController.selectedIndex)
+        previousViewController.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
     }
 }
