@@ -27,6 +27,11 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return tasks.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedTask = tasks[indexPath.row]
+        performSegue(withIdentifier: "selectTodoSegue", sender: selectedTask)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let task = tasks[indexPath.row]
@@ -60,8 +65,13 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextViewController = segue.destination as! CreateTaskViewController
-        nextViewController.previousViewController = self
+        if segue.identifier == "newTodoSegue" {
+            let nextViewController = segue.destination as! CreateTaskViewController
+            nextViewController.previousViewController = self
+        } else if segue.identifier == "selectTodoSegue" {
+            let nextViewController = segue.destination as! CompleteViewController
+            nextViewController.task = sender as! Task
+        }
     }
 }
 

@@ -15,6 +15,7 @@
 		C32EB7F41EDAA4740099CB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32EB7F21EDAA4740099CB6B /* LaunchScreen.storyboard */; };
 		C32EB7FC1EDAA7A80099CB6B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32EB7FB1EDAA7A80099CB6B /* Task.swift */; };
 		C395AB351EDB6F18004E7158 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395AB341EDB6F18004E7158 /* CreateTaskViewController.swift */; };
+		C3F62EC71F0384A60050CF55 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F62EC61F0384A60050CF55 /* CompleteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C32EB7F51EDAA4740099CB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32EB7FB1EDAA7A80099CB6B /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C395AB341EDB6F18004E7158 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTaskViewController.swift; path = ../CreateTaskViewController.swift; sourceTree = "<group>"; };
+		C3F62EC61F0384A60050CF55 /* CompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				C32EB7E61EDAA4740099CB6B /* AppDelegate.swift */,
 				C32EB7E81EDAA4740099CB6B /* TasksViewController.swift */,
+				C3F62EC61F0384A60050CF55 /* CompleteViewController.swift */,
 				C395AB341EDB6F18004E7158 /* CreateTaskViewController.swift */,
 				C32EB7EA1EDAA4740099CB6B /* Main.storyboard */,
 				C32EB7F01EDAA4740099CB6B /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 				C32EB7EF1EDAA4740099CB6B /* todokoon.xcdatamodeld in Sources */,
 				C32EB7E71EDAA4740099CB6B /* AppDelegate.swift in Sources */,
 				C395AB351EDB6F18004E7158 /* CreateTaskViewController.swift in Sources */,
+				C3F62EC71F0384A60050CF55 /* CompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
